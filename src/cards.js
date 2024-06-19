@@ -85,7 +85,7 @@ function createCard (card) {
     const $suit = document.createElement('card-suit');
     const [x, y, rotate] = pos;
 
-    $suit.innerHTML = `<img src="../fa/${suit}.svg">`;
+    $suit.innerHTML = `<img src="../${suit}s.svg">`;
 
     $suit.style.top = `${50 + y * 50}%`;
     $suit.style.left = `${50 + x * 50}%`;
