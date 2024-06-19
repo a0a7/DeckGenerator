@@ -5,7 +5,7 @@ const suitpos = require('./src/suitpos.js');
 const suits = 'spade heart club diamond'.split(' ');
 const colors = 'black red'.split(' ');
 const ranks = 'a 2 3 4 5 6 7 8 9 10 j q k'.split(' ').concat('joker');
-const printedRanks = 'A 2 3 4 5 6 7 8 9 10 J Q K'.split(' ').concat('J\nO\nK\nE\nR');
+const printedRanks = 'Т 2 3 4 5 6 7 8 9 10 В Д К'.split(' ').concat('Д\nЖ\nО\nК\nЕ\nР');
 
 const hexColors = {
   red: '#c22',
