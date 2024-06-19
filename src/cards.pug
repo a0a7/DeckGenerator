@@ -15,14 +15,14 @@ body
         if card.i < 52
           each suit in card.suitpos
             .card-suit(style='left: ' + (50 + suit[0] * 50) + '%; top: ' + (50 + suit[1] * 50) + '%; transform: translate(-50%, -50%) rotate(' + (suit[2] ? '180deg' : '0') + ')')
-              img(src='../fa/' + card.suit + '.svg')
+              img(src='../graphics/' + card.suit + '.svg')
       .card-corner.card-topleft
         .card-rank !{card.printedRank.replace(/\n/g, '<br>')}
         if card.i < 52
           .card-suit
-            img(src='../fa/' + card.suit + '.svg')
+            img(src='../graphics/' + card.suit + '.svg')
       .card-corner.card-bottomright
         .card-rank !{card.printedRank.replace(/\n/g, '<br>')}
         if card.i < 52
           .card-suit
-            img(src='../fa/' + card.suit + '.svg')
+            img(src='../graphics/' + card.suit + '.svg')

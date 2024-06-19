@@ -60,7 +60,8 @@ function createCard (card) {
 
     if (i < 52) {
       const $suit = document.createElement('card-suit');
-      $suit.innerHTML = `<img src="../fa/${suit}.svg">`;
+      $suit.innerHTML = `<img src="../graphics/${suit}.svg">`;
+      console.log(suit, $suit.innerHTML)
       $parent.appendChild($suit);
     }
 
@@ -85,7 +86,7 @@ function createCard (card) {
     const $suit = document.createElement('card-suit');
     const [x, y, rotate] = pos;
 
-    $suit.innerHTML = `<img src="../${suit}s.svg">`;
+    $suit.innerHTML = `<img src="../graphics/${suit}.svg">`;
 
     $suit.style.top = `${50 + y * 50}%`;
     $suit.style.left = `${50 + x * 50}%`;
